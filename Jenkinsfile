@@ -9,16 +9,15 @@ pipeline {
                     reuseNode true
                 }
             }
-        
+
             steps {
                 sh '''
                     ls -la
                     node --version
-                    npm --version
+                    npm --versin
                     npm ci
                     npm run build
-                    ls -la
-                    '''
+                '''
             }
         }    
     }
