@@ -9,7 +9,7 @@ pipeline {
                     reuseNode true
                 }
             }
-        }
+        
             steps {
                 '''
                 ls -la
@@ -20,6 +20,7 @@ pipeline {
                 ls -la
                 '''
             }
+        }    
     }
 }
 
